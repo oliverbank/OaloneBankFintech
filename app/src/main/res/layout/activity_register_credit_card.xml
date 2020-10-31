@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".CreditCardTransactions.RegisterCreditCardActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Registrar mi nueva tarjeta de crédito"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Datos de la tarjeta de crédito:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Número de tarjeta:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCardNumber"
+                            android:maxLength="16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/credit_card_vector_asset"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Número de tarjeta..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Fecha de vencimiento:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCardMonth"
+                            android:maxLength="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/credit_card_vector_asset"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Mes..."
+                            android:padding="4dp" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="/"
+                            android:textSize="25sp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtCardYear"
+                            android:maxLength="2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/credit_card_vector_asset"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Año..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Código CVV:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCardCvv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/credit_card_vector_asset"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Código CVV..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Proveedor:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/carTypeImage"
+                        android:src="@drawable/credit_card_blue_icon"
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCardType"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:text="-"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Institución Financiera:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Banco o Institución financiera que emitió la tarjeta:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:gravity="start|center_vertical"
+                        android:id="@+id/btnBank"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:hint=" Institución Financiera"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnRegisterCreditCard"
+                android:layout_margin="8dp"
+                android:background="@drawable/button3_background"
+                android:text="REGISTRAR TARJETA"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

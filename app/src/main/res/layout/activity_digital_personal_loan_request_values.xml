@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".PersonalLendings.DigitalPersonalLoanRequestValuesActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Préstamo personal digital"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="¿Cuanto dinero necesitas?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/edtTransferAmmount"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|number"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:padding="2dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:hint="Monto a solicitar..."
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:text="Selecciona la moneda del monto a solicitar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rdPenAccount"
+                            android:layout_margin="8dp"
+                            android:text="S/ (PEN)"
+                            android:padding="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/rdUsdAccount"
+                            android:layout_margin="8dp"
+                            android:text="$ (USD)"
+                            android:padding="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnOmitAndConitnue"
+                android:layout_margin="8dp"
+                android:background="@drawable/button3_background"
+                android:text="Omitir Retorno y Conitnuar"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Retorno del préstamo:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Esta información nos ayudará a saber qué es lo necesitas y encontrar la mejor oferta para ti. Si no deseas completar esta parte puedes presionar omitir retorno y coninuar."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Tasa de Interés Efectiva Anual (%):"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtInterestRate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/interest_rate_icon"
+                            android:hint="Tasa de interés efectiva anual (%)..."
+                            android:inputType="number|numberDecimal"
+                            android:padding="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Frecuencia de pago en meses:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnPaymentFrencuency"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Frecuencia de pago..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Meses que durará el préstamo:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnMonths"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Meses que durará el préstamo..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Peíodo de gracia en meses:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnGracePeriod"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Período de gracia en meses..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="* Los valores declarados no siempre serán lo que las instituciones financieras ofertarán. Simula tu préstamo en base la tasa y plazos que creas conveniente."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Button
+                        android:id="@+id/btnCalculateAmortization"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button2_background"
+                        android:text="Simular Préstamo"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_margin="8dp"
+                android:background="@drawable/button3_background"
+                android:text="SIGUIENTE"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.MyCompanyAccountActivity">
+
+    <ScrollView
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:src="@color/colorPrimary"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/txtFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nombre completo"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgUserVerification"
+                    android:layout_marginStart="4dp"
+                    android:src="@drawable/transaction_in_progress"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/white" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Cuentas:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/penAccountLayout"
+                        android:padding="16dp"
+                        android:background="@drawable/button1_background"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/cashier_icon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="Cuenta Corriente Soles (S/ - PEN)"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginTop="2dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtPenBasicAccountAmmount"
+                                    android:layout_margin="4dp"
+                                    android:textSize="20sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="S/ 0.00"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/usdAccountLayout"
+                        android:padding="16dp"
+                        android:background="@drawable/button1_background"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_marginEnd="8dp"
+                                android:src="@drawable/cashier_icon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"/>
+
+                            <LinearLayout
+                                android:layout_margin="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="Cuenta Corriente Dólares ($ - USD)"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginTop="2dp"
+                                    android:background="@android:color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtUsdBasicAccountAmmount"
+                                    android:layout_margin="4dp"
+                                    android:textSize="20sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="$ 0.00"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Líneas de crédito:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/creditLineRequestLayoutPen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnCreditLinePenRequest"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button1_background"
+                            android:text="SOLICITAR LÍNEA EN SOLES (S/ - PEN)"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/creditLineRequestLayoutUsd"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnCreditLineUsdRequest"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button1_background"
+                            android:text="SOLICITAR LÍNEA EN DÓARES ($/ - USD)"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/creditLineLayoutPen"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/creditCardViewPen"
+                            android:transitionName="cardViewTransition"
+                            android:layout_margin="8dp"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="8dp"
+                                android:orientation="vertical"
+                                android:background="@drawable/button1_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/oliverBankLogo"
+                                        android:transitionName="oliverBankLogoTransition"
+                                        android:src="@drawable/oliver_bank_main_icon"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"/>
+
+                                    <TextView
+                                        android:transitionName="oliverBankNameTransition"
+                                        android:textSize="18sp"
+                                        android:textColor="@android:color/white"
+                                        android:text="Oliver Bank"
+                                        android:layout_weight="5"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:transitionName="lineOfCreditNameTransition"
+                                        android:layout_margin="8dp"
+                                        android:textSize="15sp"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/white"
+                                        android:text="Línea de Crédito Digital Corporativa (S/)"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:padding="4dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:layout_toStartOf="@id/seekBarPen"
+                                        android:gravity="center_horizontal"
+                                        android:layout_weight="1.5"
+                                        android:orientation="vertical"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:transitionName="text1Transition"
+                                            android:text="Consumido:"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:transitionName="textConsumedTransition"
+                                            android:id="@+id/txtCreditLineUsedPen"
+                                            android:text="S/0.00"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <com.xw.repo.BubbleSeekBar
+                                        android:clickable="false"
+                                        android:transitionName="seekBarTransition"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginStart="0dp"
+                                        android:layout_marginEnd="0dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:id="@+id/seekBarPen"
+                                        android:layout_weight="3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        app:bsb_track_color="@color/colorAccent"
+                                        app:bsb_bubble_color="@color/colorAccent"
+                                        app:bsb_bubble_text_color="@android:color/white"
+                                        app:bsb_second_track_color="@color/colorPrimary"
+                                        app:bsb_thumb_color="@android:color/transparent"
+                                        app:bsb_max="100"
+                                        app:bsb_min="0"
+                                        app:bsb_second_track_size="8dp"
+                                        app:bsb_progress="0"
+                                        app:bsb_section_count="0"
+                                        app:bsb_track_size="8dp"
+                                        app:bsb_show_progress_in_float="false"
+                                        app:bsb_show_section_mark="false"
+                                        app:bsb_show_section_text="false"
+                                        app:bsb_show_thumb_text="false"
+                                        app:bsb_always_show_bubble="false"
+                                        />
+
+                                    <LinearLayout
+                                        android:layout_toStartOf="@id/seekBarPen"
+                                        android:gravity="center_horizontal"
+                                        android:layout_weight="1.5"
+                                        android:orientation="vertical"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="Disponible:"
+                                            android:transitionName="text2Transition"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtCreditLineAvaiilablePen"
+                                            android:transitionName="textAvailableTransition"
+                                            android:text="S/0.00"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="4dp"
+                                    android:padding="4dp"
+                                    android:id="@+id/txtCreditLineTotalPen"
+                                    android:transitionName="textLineApprovedTransition"
+                                    android:layout_marginStart="4dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@android:color/white"
+                                    android:text="Línea Aprobada: S/ 0.00"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:id="@+id/creditLineLayoutUsd"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_below="@id/txtTittle"
+                                android:transitionName="cardViewTransition"
+                                android:id="@+id/creditCardViewUsd"
+                                android:layout_margin="8dp"
+                                app:cardElevation="10dp"
+                                app:cardCornerRadius="8dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:padding="8dp"
+                                    android:orientation="vertical"
+                                    android:background="@drawable/button1_background"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_marginTop="4dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <ImageView
+                                            android:src="@drawable/oliver_bank_main_icon"
+                                            android:layout_weight="1"
+                                            android:layout_width="0dp"
+                                            android:layout_height="35dp"/>
+
+                                        <TextView
+                                            android:textSize="18sp"
+                                            android:textColor="@android:color/white"
+                                            android:text="Oliver Bank"
+                                            android:layout_weight="5"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_marginTop="8dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_margin="8dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center"
+                                            android:textColor="@android:color/white"
+                                            android:text="Línea de Crédito Digital Corporativa ($)"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"/>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:padding="4dp"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <LinearLayout
+                                            android:layout_toStartOf="@id/seekBarPen"
+                                            android:gravity="center_horizontal"
+                                            android:layout_weight="1.5"
+                                            android:orientation="vertical"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:text="Consumido:"
+                                                android:textSize="12sp"
+                                                android:textColor="@android:color/white"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:id="@+id/txtCreditLineUsedUsd"
+                                                android:text="$ 0.00"
+                                                android:textSize="12sp"
+                                                android:textColor="@android:color/white"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                        </LinearLayout>
+
+                                        <com.xw.repo.BubbleSeekBar
+                                            android:clickable="false"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginStart="0dp"
+                                            android:layout_marginEnd="0dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:id="@+id/seekBarUsd"
+                                            android:layout_weight="3"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            app:bsb_track_color="@color/colorAccent"
+                                            app:bsb_bubble_color="@color/colorAccent"
+                                            app:bsb_bubble_text_color="@android:color/white"
+                                            app:bsb_second_track_color="@color/colorPrimary"
+                                            app:bsb_thumb_color="@android:color/transparent"
+                                            app:bsb_max="100"
+                                            app:bsb_min="0"
+                                            app:bsb_second_track_size="8dp"
+                                            app:bsb_progress="0"
+                                            app:bsb_section_count="0"
+                                            app:bsb_track_size="8dp"
+                                            app:bsb_show_progress_in_float="false"
+                                            app:bsb_show_section_mark="false"
+                                            app:bsb_show_section_text="false"
+                                            app:bsb_show_thumb_text="false"
+                                            app:bsb_always_show_bubble="false"
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_toStartOf="@id/seekBarPen"
+                                            android:gravity="center_horizontal"
+                                            android:layout_weight="1.5"
+                                            android:orientation="vertical"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:text="Disponible:"
+                                                android:textSize="12sp"
+                                                android:textColor="@android:color/white"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                            <TextView
+                                                android:id="@+id/txtCreditLineAvaiilableUsd"
+                                                android:text="$ 0.00"
+                                                android:textSize="12sp"
+                                                android:textColor="@android:color/white"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_marginTop="4dp"
+                                        android:padding="4dp"
+                                        android:id="@+id/txtCreditLineTotalUsd"
+                                        android:layout_marginStart="4dp"
+                                        android:textSize="12sp"
+                                        android:textColor="@android:color/white"
+                                        android:text="Línea Aprobada: $ 0.00"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:background="@drawable/edit_text_background1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCreditScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/credit_score_vector_asset"
+                        android:gravity="center_vertical"
+                        android:text="Calificación Crediticia: Desconocido"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/store_vector_asset"
+                        android:gravity="center_vertical"
+                        android:text="Información de la Empresa:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtDocumentType"
+                        android:layout_marginTop="10dp"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="Tipo de documento: RUC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtDocumentNumber"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Número de documento: 12345678"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:drawableStart="@drawable/store_vector_asset"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Género: Hombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtAge"
+                        android:drawableStart="@drawable/store_vector_asset"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Edad: 22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtNationality"
+                        android:drawableStart="@drawable/location_icon"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Nacionalidad: Perú"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Domicilio: Jr. Libertad 646 Magdalena del mar, Lima"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtOcupation"
+                        android:drawableStart="@drawable/job_icon"
+                        android:gravity="center_vertical"
+                        android:layout_margin="4dp"
+                        android:text="Ocupación: Gerente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDeposit"
+            android:text="DEPOSITAR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button1_background_rectangle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:text="TRANSFERIR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3_background_rectangle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnWithdrawal"
+            android:text="RETIRAR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button2_background_rectangle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

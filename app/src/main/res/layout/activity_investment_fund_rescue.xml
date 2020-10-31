@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".InvestmentFunds.InvestmentFundRescueActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Rescate del Fondo"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCurrentQuoteValue"
+                android:layout_margin="8dp"
+                android:background="@drawable/button1_background_rectangle"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:text="-"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/button3_background"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:text="Mi participación en el fondo:"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:padding="4dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtMyQuotesNumber"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtMyFundInvestmentParticipation"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:layout_margin="4dp"
+                        android:text="Datos Adicionales:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastQuoteValue"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastTransaction"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyFundInvestment"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastTransactionDate"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtDaysSinceLastTransaction"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Mis Cuentas:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:text="¿Dónde quieres recibir el dinero?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rdPenAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta básica (Soles - PEN): S/ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/rdUsdAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta básica (Dólares - USD): $ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtCurrencyRate"
+                        android:gravity="end"
+                        android:layout_marginEnd="4dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Tipo de cambio: Compra: 3.30 Venta: 3.40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="6dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="¿Cuantás cuotas rescatarás?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/btnQuotesNumber"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="0"
+                        android:padding="4dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtMinDaysFund"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:padding="6dp"
+                android:background="@drawable/button1_background_rectangle"
+                android:text="Plazo mínimo de permanencia: 30 días"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:textColor="@android:color/black"
+                        android:text="DETALLES DE LA TRANSACCIÓN:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="100dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtQuotesAdquisitionAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto a rescatar: 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtSuscriptionFeeAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Costo de Rescate Anticipado: 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtTotalInvestment"
+                        android:layout_margin="12dp"
+                        android:padding="6dp"
+                        android:background="@drawable/button2_background_rectangle"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:text="RESCATE TOTAL: 0.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <CheckBox
+                android:background="@drawable/edit_text_background1"
+                android:padding="8dp"
+                android:layout_margin="8dp"
+                android:id="@+id/cbAgreement"
+                android:text="Declaro mi concentimiento para esta inversión"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnRescueFunds"
+                android:drawableStart="@drawable/invest_icon"
+                android:padding="8dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/button3_background"
+                android:text="RESCATAR FONDOS"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".CreditLineRequestApprovedActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/txtReject"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:src="@drawable/transaction_completed"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:id="@+id/layoutIcons"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/moneyInHand"
+                android:layout_margin="12dp"
+                android:src="@drawable/money_in_hand_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+
+            <ImageView
+                android:id="@+id/creditCard"
+                android:layout_margin="12dp"
+                android:src="@drawable/credit_card_out_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:text="Ver más detalles"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnNext"
+            android:layout_margin="30dp"
+            android:background="@drawable/button1_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtReject"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="RECHAZAR"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

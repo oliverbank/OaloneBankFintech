@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyLoans.ExpressLoan.ExpressLoanDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Beneficios:"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="- 100% Digital"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="- Aprobado y desembolsado en menos de 24 horas"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="- No necesitas un avalista o garantías"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="- Ajustado a tu medida"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="- Simula tu Préstamo"
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="¿Cómo solicitar el préstamo?"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:padding="4dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/simulation_1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Simula tu Préstamo"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_margin="4dp"
+                                android:src="@drawable/right_arrow_icon"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"/>
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/upload_file1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Carga tus Documentos"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_margin="4dp"
+                                android:src="@drawable/right_arrow_icon"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"/>
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/confirmation_request1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Confirmar Solicitud"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="¿Cómo recibo el préstamo?"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:padding="4dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/confirm_loan1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Confirma el préstamo"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_margin="4dp"
+                                android:src="@drawable/right_arrow_icon"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"/>
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/loan_conditions1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Acepta las condiciones"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_margin="4dp"
+                                android:src="@drawable/right_arrow_icon"
+                                android:layout_weight="0.2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"/>
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="4dp"
+                                    android:src="@drawable/loan1_icon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+
+                                <TextView
+                                    android:layout_margin="0dp"
+                                    android:text="Desembolso de préstamo"
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

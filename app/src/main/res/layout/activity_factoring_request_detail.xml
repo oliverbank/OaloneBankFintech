@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Investors.FactoringRequestDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Nombre de la empresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/gradient_animation">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:transitionName="imageTransition"
+                    android:id="@+id/imgCompanyImage"
+                    android:src="@drawable/demo_icon"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Ficha de la empresa"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtCompanyName"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/store_vector_asset"
+                                android:text="Nombre comercial: O' alone Developer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtCompanyType"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/company_icon"
+                                android:text="Tipo de empresa: Sociedad anónima"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtBusinessLine"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/business_line_icon"
+                                android:text="Actividad económica: Desarrollo de software"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtCompanyLocation"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/location_icon"
+                                android:text="Localización:Lima"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtCompanyAge"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/calendar_icon"
+                                android:text="Años en el mercado: 4 Años"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtBusinessMan"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/card_person_icon"
+                                android:text="Empresario (Nombre de usuario): O' alone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtCompanyVerification"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@android:color/black"
+                                    android:drawableStart="@drawable/warrant_icon"
+                                    android:text="Verificación de la empresa: Verificado"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/imageCompanyVerification"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/transaction_in_progress"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:textColor="@android:color/black"
+                                android:gravity="end"
+                                android:textSize="12sp"
+                                android:text="*Datos más especificos serán mostrados al realizar la transacción"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Ficha del financiamiento"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_margin="6dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="4dp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:drawableStart="@drawable/money2_icon"
+                                android:text="Modalidad del financiamiento"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgFinanceDestination"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/factoring_icon"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp" />
+
+                            <TextView
+                                android:id="@+id/txtFinanceDestination"
+                                android:padding="4dp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:text="Factoring"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:layout_margin="4dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                            <TextView
+                                android:id="@+id/txtCustomerSocialReason"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="2dp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/card_person_icon"
+                                android:text="Cliente: Razón social del ciente"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtBillAmmount"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="2dp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/money2_icon"
+                                android:text="Importe de la factura: 4500 PEN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtFactoringRequestEnds"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="2dp"
+                                android:textColor="@android:color/black"
+                                android:gravity="center_vertical"
+                                android:drawableStart="@drawable/calendar_icon"
+                                android:text="Esta subasta termina en - dias"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Ficha de retorno de la inversión"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@color/redColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:text="INVERSIÓN"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtAmmount"
+                                    android:text="1'150,400.34"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtInvestmentCurrency"
+                                    android:layout_marginStart="4dp"
+                                    android:text="PEN"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:text="RETORNO ANUAL"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtInterestRate"
+                                    android:text="15.24"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginStart="0dp"
+                                    android:text="%"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:text="VENCIMIENTO"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtEndDate"
+                                    android:text="15-10-2019"
+                                    android:textColor="@android:color/white"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/txtFinanceDays"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="2dp"
+                            android:text="Periodo a financiar: 15 días"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtPeriodicalRate"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="2dp"
+                            android:text="Tasa aplicable para el período: 0.1433%"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtResguardAmmount"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="2dp"
+                            android:text="Resguardo: 14.34 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+
+
+                        <TextView
+                            android:id="@+id/txtTotalDebt"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="2dp"
+                            android:text="Retorno total: 141935.13 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="6dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/money_earned_icon"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:padding="2dp"
+                                    android:text="INTERÉS TOTAL GANADO"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <View
+                                    android:layout_margin="4dp"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                                <TextView
+                                    android:id="@+id/txtInterestAmmount"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:padding="2dp"
+                                    android:text="1,426.69 PEN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:id="@+id/txtRequesstDate"
+                    android:layout_margin="4dp"
+                    android:gravity="end"
+                    android:text="Solicitud publicada el 4 de octubre del 2019 a las 22:45 horas por O' alone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnInvest"
+        android:text="INVERTIR"
+        android:background="@drawable/button3_background_rectangle"
+        android:drawableStart="@drawable/invest_icon"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

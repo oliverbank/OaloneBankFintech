@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="4dp"
+            android:background="@drawable/edit_text_background1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuenta básica (Soles - PEN):" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/txtBasicAccountAmmount"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="S/ 0.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:background="@drawable/edit_text_background1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TREA:" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/txtTrea"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="0.00%" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:background="@drawable/button2_background_rectangle"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interés a reclamar hoy: " />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/txtInterestAmmount"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="S/0.00" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnClaimInerest"
+            android:layout_margin="10dp"
+            android:text="RECLAMAR INTERÉS DIARIO"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

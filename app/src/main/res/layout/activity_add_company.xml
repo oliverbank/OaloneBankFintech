@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.AddCompanyActivity">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:text="Imágen o logo de la empresa"
+                        android:textColor="@android:color/white"
+                        android:padding="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnCompanyImage"
+                        android:background="@drawable/edit_text_background1"
+                        android:src="@drawable/camera_icon"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="18dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp" />
+
+                    <TextView
+                        android:id="@+id/txtImageVerification"
+                        android:text=""
+                        android:textColor="@android:color/holo_green_dark"
+                        android:layout_marginBottom="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="Información básica"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:textColor="@android:color/white"
+                        android:padding="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Registro unico de contribuyente (RUC):"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/edtRuc"
+                        android:drawableStart="@drawable/store_vector_asset"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:hint="Registro único de contribuyente (RUC)..."
+                        android:inputType="number"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Actividad economica:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnBusinessLine"
+                        android:drawableStart="@drawable/business_line_icon"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:gravity="start|center_vertical"
+                        android:hint="Actividad económica..."
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:text="Ubicación del negocio o sucursal"
+                        android:textColor="@android:color/white"
+                        android:padding="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Departamento o Region:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <Button
+                        android:id="@+id/btnDepartment"
+                        android:drawableStart="@drawable/location_icon"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:gravity="start|center_vertical"
+                        android:hint="Departamento o region..."
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Provincia:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnProvince"
+                        android:drawableStart="@drawable/location_icon"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:gravity="start|center_vertical"
+                        android:hint="Provincia..."
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Distrito:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btnDistrict"
+                        android:drawableStart="@drawable/location_icon"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:gravity="start|center_vertical"
+                        android:hint="Distrito..."
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:text="Información adicional"
+                        android:textColor="@android:color/white"
+                        android:padding="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="Fecha de constitutción de la empresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/edtBthDay"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:hint="Día"
+                            android:minEms="2"
+                            android:maxEms="2"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="-"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="32sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/edtBthMonth"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:hint="Mes"
+                            android:minEms="1"
+                            android:maxEms="2"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:text="-"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="32sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/edtBthYear"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:hint="Año"
+                            android:minEms="4"
+                            android:maxEms="4"
+                            android:padding="5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginStart="20dp"
+                        android:text="Número de trabajadores:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <EditText
+                        android:id="@+id/edtNumberOfWorkers"
+                        android:drawableStart="@drawable/worker_icon"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:hint="Número de trabajadores..."
+                        android:inputType="number"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:text="Adjunta tu Ficha RUC de Sunat. (PDF o Imágen)"
+                        android:textColor="@android:color/white"
+                        android:padding="4dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnCurrentStateAccount"
+                        android:background="@drawable/edit_text_background1"
+                        android:src="@drawable/camera_icon"
+                        android:padding="01dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="10dp"
+                        android:layout_width="190dp"
+                        android:layout_height="190dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:text="Ajunta una imágen donde se muestre tu empresa (Imágen)"
+                        android:textColor="@android:color/white"
+                        android:padding="4dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnDeclarationOfCompany"
+                        android:background="@drawable/edit_text_background1"
+                        android:src="@drawable/camera_icon"
+                        android:padding="01dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="10dp"
+                        android:layout_width="190dp"
+                        android:layout_height="190dp" />
+
+                    <CheckBox
+                        android:layout_margin="4dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:padding="4dp"
+                        android:id="@+id/checkDataTrue"
+                        android:text="Confirmo que soy el dueño o representante legal de la empresa."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:layout_margin="4dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:padding="4dp"
+                        android:id="@+id/checkDataManagement"
+                        android:text="Estoy de acuerdo con las políticas, términos y condiciones del manejo de los datos."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/qrCode"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/qr_code_icon"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:gravity="end"
+                android:layout_margin="2dp"
+                android:textStyle="italic"
+                android:text="Leer políticas, términos y condiciones."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button1_background"
+                android:text="REGISTRAR EMPRESA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".ForexExchange.ForexExchangeAmmountActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Nombre de operación"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtQuantityMessage"
+                        android:layout_marginTop="6dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="¿Cuantos UM necesitas?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/edtAmmount"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|number"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:padding="2dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:hint="Monto en UM..."
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCurrencyRate"
+                        android:gravity="end"
+                        android:layout_marginEnd="4dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Tipo de cambio: ---"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/originFlag"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorPrimary"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp" />
+
+                <android.support.v7.widget.CardView
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Tú usas:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtOriginAmmount"
+                            android:text="0.00"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    app:cardElevation="10dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtUsernameRecieve"
+                            android:text="Tú recibes:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtReceiverAmmount"
+                            android:text="0.00"
+                            android:textSize="22sp"
+                            android:textColor="@color/colorPrimary"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/receiverFlag"
+                    android:layout_margin="5dp"
+                    android:src="@color/colorPrimary"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Mis Cuentas:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:text="Cuenta de origen:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtSenderAccount"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:text="Cuenta básica (UM - UM):  0.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Cuenta de destino:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtReceriverAccount"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:background="@drawable/edit_text_background1"
+                        android:text="Cuenta básica (UM - UM):  0.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnFinish"
+                android:layout_margin="8dp"
+                android:background="@drawable/button3_background"
+                android:text="REALIZAR OPERACIÓN"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

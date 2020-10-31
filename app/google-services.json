@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "347299167774",
+    "firebase_url": "https://o-alone-bank-fintech.firebaseio.com",
+    "project_id": "o-alone-bank-fintech",
+    "storage_bucket": "o-alone-bank-fintech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347299167774:android:d5d7e8929d42e309",
+        "android_client_info": {
+          "package_name": "oliver.oalone.oalonedevelopers.oalonebank_fintech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347299167774-df9l4069mt227t7eue45fao4jop3bd61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "oliver.oalone.oalonedevelopers.oalonebank_fintech",
+            "certificate_hash": "131e3dbdfebb20fc7064b915340843d7f6931148"
+          }
+        },
+        {
+          "client_id": "347299167774-nnpsreqscgg8t7tetsilk6cd5d0tabha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZUu7M-VIgtzXLzzYkcxzqBZuGW04RpOM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347299167774-nnpsreqscgg8t7tetsilk6cd5d0tabha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

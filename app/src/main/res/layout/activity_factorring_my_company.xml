@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.FactorringMyCompanyActivity">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Empresa a financiar"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageCompany"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@color/backgroundColor" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtCompanyName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre de la empresa"
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:id="@+id/txtCompanyRuc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RUC: 123456780897"
+                                android:textColor="@android:color/black" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Verificación:"
+                                    android:textColor="@android:color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtCompanyVerification"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="En proceso"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageView
+                                    android:id="@+id/imageCompanyVerification"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/transaction_in_progress" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Datos del Cliente"
+                        android:textColor="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCustomerSocialReason"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/card_person_icon"
+                            android:hint="Razon Social del cliente..."
+                            android:inputType="text"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCustomerRuc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/card_person_icon"
+                            android:hint="Número de RUC del cliente..."
+                            android:inputType="number"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCustomerName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/card_person_icon"
+                            android:hint="Nombre completo del cliente..."
+                            android:inputType="text"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Ubicación del cliente"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnDepartment"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/location_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Departamento o Región..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnProvince"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/location_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Provincia..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnDistrict"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/location_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Distrito..."
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtCustomerAddress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/location_icon"
+                            android:hint="Dirección exacta del cliente..."
+                            android:inputType="text"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Datos de la Factura Negociable"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Moneda de la factura"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdCurrencyPen"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="5dp"
+                            android:text="PEN (S/)" />
+
+                        <RadioButton
+                            android:id="@+id/rdCurrencyUsd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="5dp"
+                            android:text="USD ($)" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtBillAmmount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:hint="Importe total de la factura..."
+                            android:inputType="number|numberDecimal"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Fecha de emisión"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnStartDay"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Día"
+                            android:padding="4dp" />
+
+                        <Button
+                            android:id="@+id/btnStartMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Mes"
+                            android:padding="4dp" />
+
+                        <Button
+                            android:id="@+id/btnStartYear"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Año"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Fecha de vencimiento"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnEndDay"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Día"
+                            android:padding="4dp" />
+
+                        <Button
+                            android:id="@+id/btnEndMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Mes"
+                            android:padding="4dp" />
+
+                        <Button
+                            android:id="@+id/btnEndYear"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:gravity="start|center_vertical"
+                            android:hint="Año"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:text="Modo de Pago"
+                        android:textColor="@android:color/black" />
+
+                    <RadioGroup
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rdOnePay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="5dp"
+                            android:text="Pago único" />
+
+                        <RadioButton
+                            android:id="@+id/rdQuotesPay"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="5dp"
+                            android:text="Pago en cuotas" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtAdvancedPayment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:hint="Pago adelantado del cliente..."
+                            android:inputType="number|numberDecimal"
+                            android:padding="4dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:drawableEnd="@drawable/question_icon"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:text="Descuento o Costo de financiamiento"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:text="Recuerda que una tasa muy baja no atrae a los inversionistas"
+                        android:textColor="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edtInterestRate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_background1"
+                            android:drawableStart="@drawable/interest_rate_icon"
+                            android:hint="Tasa de interés efectiva anual (%)..."
+                            android:inputType="number|numberDecimal"
+                            android:padding="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textColor="@android:color/black"
+                            android:textSize="24sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/help_icon" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtMinimunAnualInterestRate"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <Button
+                        android:id="@+id/btnCalculateDiscount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button2_background"
+                        android:text="Calcular descuento"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_margin="10dp"
+                android:text="SIGUIENTE"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button1_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

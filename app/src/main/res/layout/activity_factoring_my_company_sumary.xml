@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.FactoringMyCompanySumaryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCompanyName"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="NOMBRE DE LA EMPRESA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:background="@drawable/edit_text_background1"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="4dp"
+                    android:id="@+id/imageCompany"
+                    android:scaleType="centerCrop"
+                    android:src="@color/colorPrimary"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/txtCompanyType"
+                        android:drawableStart="@drawable/company_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Tipo de Empresa: Empresa individual de Responsailidad Limitada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtBusinessLine"
+                        android:drawableStart="@drawable/business_line_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Actividad económica: Desarrollo de software"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCompanyDepartment"
+                        android:drawableStart="@drawable/location_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Departamento: Lima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                android:textSize="18sp"
+                android:background="@drawable/edit_text_background1"
+                android:text="DETALLES DEL FINANCIAMIENTO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="TIPO DE OPERACIÓN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/txtFinancingDestination"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="Factoring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/factoring_icon"
+                        android:layout_margin="4dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="INFORMACIÓN DEL CLIENTE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCustomerSocialReason"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Razón social del cliente: Oliver Bank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerRuc"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:textColor="@android:color/black"
+                        android:text="RUC del cliente: 10943764435"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Nombre del cliente: Oliver Paredes Fasce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCustomerAddress"
+                        android:drawableStart="@drawable/location_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Ubicación del cliente: Jr libertad 123, Magdalena de Mar, Lima, Lima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="DATOS DE LA FACTURA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/txtBillAmmount"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Importe de la factura: 14,353.45 PEN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtStartBill"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Emisión de la factura: 18-08-2019"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtEndBill"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Vencimiento de la factura: 18-10-2019"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="RETORNO DEL INVERSOR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:text="*Estos datos no incluyen los costos de transacción"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtAnualInterestRate"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/interest_rate_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Tasa de interés efectiva anual: 24.54%"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCurrentDate"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Fecha actual: 15-10-2019"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txEndBill"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Vencimiento de la factura: 15-12-2019"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtPeriodicalDays"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Periodo a financiar: 45 días"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtDailyInterestRate"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/interest_rate_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Tasa de interés efectiva diaria: 4.54%"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtPeriodicalRate"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/interest_rate_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Tasa aplicada para el período: 4.54%"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtDiscountAmmount"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Monto de descuento: 1312.34 PEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtResguardRate"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/interest_rate_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Resguardo: 4.5%"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/txtResguardAmmount"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Monto a recibir al vencimiento: 15.43 PEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/txtFactoringAmmount"
+                        android:padding="4dp"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Monto a recibir hoy: 12315.43 PEN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFactoringRequestEnds"
+                        android:layout_margin="2dp"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:textColor="@android:color/black"
+                        android:text="Fin de la subasta: "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="4sp"
+                        android:textColor="@android:color/black"
+                        android:text="TARIFARIO"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:background="@drawable/table_background"
+                                    android:padding="2dp"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="CONCEPTO"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:background="@drawable/table_background"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"
+                                    android:gravity="center"
+                                    android:text="TARIFA"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:background="@drawable/table_background"
+                                    android:padding="2dp"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="DETALLE"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:background="@drawable/table_background"
+                                    android:padding="2dp"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:text="Gestión del financiamiento"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/txtFeeRate1"
+                                    android:padding="2dp"
+                                    android:background="@drawable/table_background"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:text="0.00%"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/table_background"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="Del monto total a recibir hoy"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/table_background"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="Factoring y Contrato de descuento"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/txtFeeRate2"
+                                    android:background="@drawable/table_background"
+                                    android:textColor="@android:color/black"
+                                    android:gravity="center"
+                                    android:text="0.00%"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/table_background"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="Del monto total a recibir hoy"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:background="@drawable/table_background"
+                                    android:textColor="@android:color/black"
+                                    android:padding="2dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:text="Transferencia de Flujos de efectivo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/txtFeeRate3"
+                                    android:background="@drawable/table_background"
+                                    android:textColor="@android:color/black"
+                                    android:padding="2dp"
+                                    android:gravity="center"
+                                    android:text="0.00%"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/table_background"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:text="Del monto a recibir hoy"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_margin="4sp"
+                            android:textColor="@android:color/black"
+                            android:text="COSTOS (TARIFARIO)"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtFee1Cost"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Gestión del financiamiento: 4,364.24 PEN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtFee2Cost"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Factoring y contrato de descuento: 364.24 PEN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtFee3Cost"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Transferencia de flujos de efectivo: 24.44 PEN por cuota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtMyRealFactoring"
+                            android:layout_margin="4dp"
+                            android:padding="2dp"
+                            android:background="@drawable/table_background"
+                            android:gravity="center"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Monto real a recibir hoy: 13,224.44 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/btnContract"
+                android:layout_margin="8dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button2_background"
+                android:text="Leer contrato..."
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <CheckBox
+                android:layout_margin="8dp"
+                android:background="@drawable/edit_text_background1"
+                android:padding="8dp"
+                android:id="@+id/cbAgreement"
+                android:text="Yo, nombre con DNI: 1234567 comiciliado en Jr. Hola 1413 distrito acepto todas las claúsulas del contrato y me comprometo a honrrar con las obligaciones establecidas en el presente resumen."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnFinish"
+                android:layout_margin="10dp"
+                android:background="@drawable/button1_background"
+                android:textColor="@android:color/white"
+                android:text="FINALIZAR SOLICITUD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

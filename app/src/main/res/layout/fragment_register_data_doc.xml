@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrationData.RegisterDataDocFragment">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_above="@id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Documento de Identidad"
+                            android:textSize="18sp"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="Adjunta una foto de la parte delantera y trasera de tu documento de identidad. Puedes hacer este paso ahora o más tarde."
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Parte Delantera o Frontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.CardView
+                            android:gravity="center"
+                            app:cardElevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/identification_card_person_color"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/layoutOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/btnCamera1"
+                                android:gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/button1_background"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+
+                                <ImageView
+                                    android:layout_margin="8dp"
+                                    android:src="@drawable/camera_option"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"/>
+
+                                <TextView
+                                    android:textSize="18sp"
+                                    android:text="Cámara"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnGallery1"
+                                android:layout_margin="4dp"
+                                android:gravity="center"
+                                android:background="@drawable/button3_background"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="8dp"
+                                    android:src="@drawable/gallery_option"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"/>
+
+                                <TextView
+                                    android:textSize="18sp"
+                                    android:text="Gallería"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Parte Trasera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.CardView
+                            android:gravity="center"
+                            app:cardElevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:id="@+id/img2"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/identification_card_nonfront_color"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:id="@+id/btnCamera2"
+                                android:gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/button1_background"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="8dp"
+                                    android:src="@drawable/camera_option"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"/>
+
+                                <TextView
+                                    android:textSize="18sp"
+                                    android:text="Cámara"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/btnGallery2"
+                                android:layout_margin="4dp"
+                                android:gravity="center"
+                                android:background="@drawable/button3_background"
+                                android:orientation="horizontal"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_margin="8dp"
+                                    android:src="@drawable/gallery_option"
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="35dp"/>
+
+                                <TextView
+                                    android:textSize="18sp"
+                                    android:text="Gallería"
+                                    android:textColor="@android:color/white"
+                                    android:layout_weight="1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/btnOmit"
+                    android:text="Omitir Este Paso"
+                    android:layout_margin="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button1_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_alignParentBottom="true"
+            android:text="CONTINUAR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3_background_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

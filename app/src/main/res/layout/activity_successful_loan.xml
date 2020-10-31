@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".MyLoans.ExpressLoan.ExpressLoanReady.SuccessfulLoanActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="¡TU PRÉSTAMO ESTÁ LISTO!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="0.00 FX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:src="@drawable/transaction_completed"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/txtTransactionCode"
+            android:layout_margin="4dp"
+            android:textColor="@android:color/white"
+            android:text="Código de transacción: 12345JSDJASDJ324f42n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="El dinero ya se encuentra en tu cuenta listo para usarlo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btGoToHome"
+            android:layout_margin="12dp"
+            android:text="IR A INICIO"
+            android:background="@drawable/button1_background"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

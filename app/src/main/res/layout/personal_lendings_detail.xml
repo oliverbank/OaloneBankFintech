@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:text="DETALLES DEL PRÉSTAMO"
+        android:layout_margin="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txtQuoteAmmount"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Monto de la cuota: 0.00 FX"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtQuotesNumber"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Número de cuotas: "
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtMonths"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Duración del préstamo: -"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtPaymentFrecuency"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Frecuencia de Pago: -"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtGracePeriod"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Periodo de gracia: -"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtInterestRate"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Tasa de Interés Efectiva Anual: -"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtTotalDebt"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Retorno Total: 0.00 FX"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtCostOfDebt"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Intereses: 0.00 FX"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtLastDay"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="Último día de Pago: "
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

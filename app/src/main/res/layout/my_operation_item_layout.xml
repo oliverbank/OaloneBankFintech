@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainOperationLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="2dp"
+                android:background="@drawable/edit_text_background1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/operationImage"
+                        android:src="@color/colorPrimary"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+
+                    <Button
+                        android:id="@+id/btnOperationDetail"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/button3_background"
+                        android:textColor="@android:color/white"
+                        android:text="DETALLES"
+                        android:textSize="12sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/mainLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtOperationType"
+                            android:textColor="@android:color/black"
+                            android:text="Tipo de operación: Inversión en fondo de inversión"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtOperationDate"
+                            android:textColor="@android:color/black"
+                            android:text="Fecha: 15-10-2019"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtOperationTime"
+                            android:textColor="@android:color/black"
+                            android:text="Hora: 15:13:34"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/investmentFundLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtInvestmentFundAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto invertido: 1',2543,254.35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtInvestmentFundCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Inversión realizada en: PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/depositLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtDepositAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto del depósito: 1',2543,254.35"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtDepositCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Depósito realizado en: PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtRealDepositAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto a recibir a mi cuenta: 123121"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtRealDepositCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Moneda a recibir a mi cuenta: PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="8dp"
+                            android:drawableStart="@drawable/dots_icon"
+                            android:drawableEnd="@drawable/dots_icon"
+                            android:gravity="center"
+                            android:layout_margin="4dp"
+                            android:id="@+id/txtDepositState"
+                            android:textColor="@color/colorPrimary"
+                            android:text="VER ESTADO DEL DEPÓSITO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnUploadBill"
+                            android:padding="8dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button2_background"
+                            android:drawableStart="@drawable/add_icon"
+                            android:text="CARGAR COMPROBANTE"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/transferLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtSenderUsername"
+                            android:textColor="@android:color/black"
+                            android:text="Usuario que envió: nombredeusuario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtRecieverUsername"
+                            android:textColor="@android:color/black"
+                            android:text="Usuario que recibió: nombredeusuario"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtSentAmmount"
+                                android:textColor="@android:color/black"
+                                android:text="Monto enviado: 1500.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginStart="4dp"
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtSentCurrency"
+                                android:textColor="@android:color/black"
+                                android:text="PEN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtRecievedAmmount"
+                                android:textColor="@android:color/black"
+                                android:text="Monto recibido: 450.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginStart="4dp"
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtRecievedCurrency"
+                                android:textColor="@android:color/black"
+                                android:text="USD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/directInvestmentLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtCompanyName"
+                            android:textColor="@android:color/black"
+                            android:text="Empresa financiada: Oliver Bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtInvestmentAmmount"
+                                android:textColor="@android:color/black"
+                                android:text="Monto invertido: 450.00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_margin="1dp"
+                                android:id="@+id/txtInvestmentCurrency"
+                                android:textColor="@android:color/black"
+                                android:text="USD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnInvestmentState"
+                            android:padding="4dp"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/button3_background"
+                            android:drawableStart="@drawable/invest_icon"
+                            android:text="Ver estado de la inversión"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/creditLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtCreditAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto del crédito: 1234 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtQuotesNumber"
+                            android:textColor="@android:color/black"
+                            android:text="Cuotas mensuales: 12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/creditPaymentLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtPaymentAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto pagado: 1234 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtPaymentMonth"
+                            android:textColor="@android:color/black"
+                            android:text="Mes pagado: 12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/withdrawalLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtWithdrawalAmmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto del retiro: 1234"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtWithdrawalCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Monedanto del retiro: mONEDA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtOtherBankWithdrawalCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Moneda a recibir en otro Banco: Moneda"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:background="@drawable/edit_text_background1"
+                            android:padding="8dp"
+                            android:drawableStart="@drawable/dots_icon"
+                            android:drawableEnd="@drawable/dots_icon"
+                            android:gravity="center"
+                            android:layout_margin="4dp"
+                            android:id="@+id/txtWithdrawalState"
+                            android:textColor="@color/colorPrimary"
+                            android:text="VER ESTADO DEL RETIRO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fxLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtFxReceiver"
+                            android:textColor="@android:color/black"
+                            android:text="Monto comprado: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtFxOrigin"
+                            android:textColor="@android:color/black"
+                            android:text="Monto utilizado: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/personalLendingLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtPersonalLendingAmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto prestado: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cashCreditCardLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtRequestAmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto solicitado: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtCreditCardAmount"
+                            android:textColor="@android:color/black"
+                            android:text="Gasto en mi tarjeta: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/loanOutlayLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtLoanOutLayAmount"
+                            android:textColor="@android:color/black"
+                            android:text="Monto desembolsado: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="1dp"
+                            android:id="@+id/txtLoanOutLayCurrency"
+                            android:textColor="@android:color/black"
+                            android:text="Moneda del Préstamo: "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

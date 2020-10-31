@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgLoanImage"
+                    android:src="@drawable/loan1_icon"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:id="@+id/txtLoanName"
+                    android:layout_margin="4dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="loan_name"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/tracking_icon"
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_margin="4dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:text="Estado de tu préstamo:"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutState"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgSendRequest"
+                        android:src="@drawable/send_request_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtSendRequest"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Solicitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgChecking"
+                        android:src="@drawable/checklist_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtChecking"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="En revisión"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/imgApproved"
+                        android:src="@drawable/approved_black_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+
+                    <TextView
+                        android:id="@+id/txtApproved"
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:text="Aprobado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutApproved"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_weight="0.2"
+                    android:src="@drawable/check_mark"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:text="APROBADO Y POR DESEMBOLSAR"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRejected"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_weight="0.2"
+                    android:src="@drawable/error_icon"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:text="RECHAZADO"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutReady"
+                android:padding="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_weight="0.2"
+                    android:src="@drawable/transaction_completed"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:text="APROVADO Y DESEMBOLSADO"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutButton"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:text="Continuar con el proceso"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button3_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutOptions"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPayLoan"
+                    android:text="Pagar"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button1_background"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:text="Detalles"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button2_background"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

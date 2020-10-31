@@ -1,0 +1,425 @@
+<html>
+<head>
+<title>fragment_sumary_loan_request.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+fragment_sumary_loan_request.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;FrameLayout </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;.MyLoans.ExpressLoan.ExpressLoanRequest.StudentRequest.SumaryLoanRequestFragment&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;RelativeLayout</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span><span class="s0">&gt;</span>
+
+        <span class="s0">&lt;ScrollView</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/scrollView&quot;</span>
+            <span class="s1">android:layout_above</span><span class="s2">=&quot;@id/btnContinue&quot;</span>
+            <span class="s1">android:scrollbars</span><span class="s2">=&quot;vertical&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span><span class="s0">&gt;</span>
+
+            <span class="s0">&lt;LinearLayout</span>
+                <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:id</span><span class="s2">=&quot;@+id/cardViewTitle&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Resumen de Solicitud:&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;18sp&quot;</span>
+                            <span class="s1">android:layout_margin</span><span class="s2">=&quot;4dp&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;El presente resumen presenta tus requerimientos del préstamo y detalles de los documentos adjuntados. Si no deseas hacer alguna modificación adicional puedes enviar la solicitud.&quot;</span>
+                            <span class="s1">android:layout_margin</span><span class="s2">=&quot;4dp&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">/&gt;</span>
+
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;Monto Solicitado:&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:id</span><span class="s2">=&quot;@+id/txtLoanAmount&quot;</span>
+                            <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;28sp&quot;</span>
+                            <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;S/ 0.00&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/calendar_color_icon&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;30dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Cuotas: 48 Cuotas Mensuales&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/calendar_color_icon&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;30dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Período de gracia: 2 Meses&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:gravity</span><span class="s2">=&quot;center&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/school_color_icon&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;0.5&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Información solicitada&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;2&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/transaction_in_progress&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/upload_file1&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;0.5&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Recibo de agua o luz&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;2&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/transaction_in_progress&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;20dp&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;0 Archivos cargados&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/upload_file1&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;0.5&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Constancia de matrícula&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;2&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/transaction_in_progress&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;20dp&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;0 Archivos cargados&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+                <span class="s0">&lt;android.support.v7.widget.CardView</span>
+                    <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardElevation</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;8dp&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                    <span class="s0">&lt;LinearLayout</span>
+                        <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+                        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                        <span class="s0">&lt;LinearLayout</span>
+                            <span class="s1">android:padding</span><span class="s2">=&quot;8dp&quot;</span>
+                            <span class="s1">android:gravity</span><span class="s2">=&quot;center_vertical&quot;</span>
+                            <span class="s1">android:orientation</span><span class="s2">=&quot;horizontal&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/upload_file1&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;0.5&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;TextView</span>
+                                <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+                                <span class="s1">android:textSize</span><span class="s2">=&quot;16sp&quot;</span>
+                                <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/black&quot;</span>
+                                <span class="s1">android:text</span><span class="s2">=&quot;Boletas de pago&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;2&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                            <span class="s0">&lt;ImageView</span>
+                                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/transaction_in_progress&quot;</span>
+                                <span class="s1">android:layout_weight</span><span class="s2">=&quot;1&quot;</span>
+                                <span class="s1">android:layout_width</span><span class="s2">=&quot;0dp&quot;</span>
+                                <span class="s1">android:layout_height</span><span class="s2">=&quot;30dp&quot;</span><span class="s0">/&gt;</span>
+
+                        <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                        <span class="s0">&lt;TextView</span>
+                            <span class="s1">android:layout_marginStart</span><span class="s2">=&quot;20dp&quot;</span>
+                            <span class="s1">android:textSize</span><span class="s2">=&quot;14sp&quot;</span>
+                            <span class="s1">android:text</span><span class="s2">=&quot;0 Archivos cargados&quot;</span>
+                            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+                            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot; </span><span class="s0">/&gt;</span>
+
+                    <span class="s0">&lt;/LinearLayout&gt;</span>
+
+                <span class="s0">&lt;/android.support.v7.widget.CardView&gt;</span>
+
+            <span class="s0">&lt;/LinearLayout&gt;</span>
+
+        <span class="s0">&lt;/ScrollView&gt;</span>
+
+
+        <span class="s0">&lt;Button</span>
+            <span class="s1">android:id</span><span class="s2">=&quot;@+id/btnContinue&quot;</span>
+            <span class="s1">android:textColor</span><span class="s2">=&quot;@android:color/white&quot;</span>
+            <span class="s1">android:text</span><span class="s2">=&quot;Enviar Solicitud&quot;</span>
+            <span class="s1">android:layout_alignParentBottom</span><span class="s2">=&quot;true&quot;</span>
+            <span class="s1">android:layout_margin</span><span class="s2">=&quot;8dp&quot;</span>
+            <span class="s1">android:background</span><span class="s2">=&quot;@drawable/button1_background&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span><span class="s0">/&gt;</span>
+
+
+    <span class="s0">&lt;/RelativeLayout&gt;</span>
+
+<span class="s0">&lt;/FrameLayout&gt;</span></pre>
+</body>
+</html>

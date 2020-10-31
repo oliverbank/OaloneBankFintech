@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationData.RegisterData2Fragment">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_above="@id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/identity_card"
+                            android:layout_margin="8dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"/>
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Nombres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtName"
+                            android:inputType="textCapWords"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:hint="Nombres..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Apellidos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtSurname"
+                            android:inputType="textCapWords"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:hint="Apellidos..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Tipo de Documento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnDocumentType"
+                            android:padding="8dp"
+                            android:gravity="start|center_vertical"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:hint="Tipo de Documento..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Número de Documento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtDocumentNumber"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:hint="Número de Documento..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Sexo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rdMan"
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="8dp"
+                                android:text="Hombre"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/rdWoman"
+                                android:background="@drawable/edit_text_background1"
+                                android:padding="8dp"
+                                android:text="Mujer"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Fecha de Nacimiento"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:drawableStart="@drawable/calendar_icon"
+                                android:id="@+id/edtBthDay"
+                                android:inputType="number"
+                                android:padding="8dp"
+                                android:maxLength="2"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:hint="Día"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:drawableStart="@drawable/calendar_icon"
+                                android:id="@+id/edtBthMonth"
+                                android:inputType="number"
+                                android:padding="8dp"
+                                android:maxLength="2"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:hint="Mes"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:drawableStart="@drawable/calendar_icon"
+                                android:id="@+id/edtBthYear"
+                                android:inputType="number"
+                                android:padding="8dp"
+                                android:maxLength="4"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/edit_text_background1"
+                                android:hint="Año"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Nacionalidad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccpCNationalityountry"
+                            app:ccp_textSize="14sp"
+                            android:layout_margin="8dp"
+                            android:padding="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            app:ccp_showFullName="true"
+                            app:ccp_showFlag="true"
+                            app:ccp_autoDetectLanguage="true"
+                            app:ccp_showPhoneCode="false"
+                            app:ccp_showNameCode="true"
+                            app:ccp_textGravity="LEFT"
+                            app:ccp_autoDetectCountry="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_alignParentBottom="true"
+            android:text="CONTINUAR"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3_background_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,1473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".InvestmentFunds.InvestmentFundDetailActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Nombre del fondo de inversión"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:layout_marginBottom="55dp"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/business_line_icon"
+                        android:text="Descripción del fondo:"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFundDescription"
+                        android:layout_margin="6dp"
+                        android:text="El fondo de inversión de renta fija invierte el 95% en bonos y el otro 5% en acciones, depositos a plazo y certificados bancarios"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/interest_rate_icon"
+                        android:text="Datos del fondo:"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCurrentQuoteValue"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtTotalInvestment"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtQuotesCirculating"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:id="@+id/txtMinDaysFund"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtRecomendedDays"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFundRisk"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:text="RENTABILIDAD DEL FONDO"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/button1_background_rectangle"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:padding="4dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="ANUAL"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                            <TextView
+                                android:id="@+id/txtFundAnualProfit"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/button2_background_rectangle"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:padding="4dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="MENSUAL"
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <View
+                                android:background="@android:color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"/>
+
+                            <TextView
+                                android:id="@+id/txtFundMonthlyProfit"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/button3_background"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/card_person_icon"
+                        android:text="Mi participación en el fondo:"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:padding="4dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/edit_text_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtMyQuotesNumber"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtMyFundInvestmentParticipation"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:layout_margin="4dp"
+                        android:text="Datos Adicionales:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastQuoteValue"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastTransaction"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyFundInvestment"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtMyLastTransactionDate"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtDaysSinceLastTransaction"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:text="Tarifas"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txtSuscriptionFee"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtManagementFee"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtFundRescue"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/business_line_icon"
+                        android:text="Historial del fondo:"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <HorizontalScrollView
+                        android:layout_margin="2dp"
+                        android:scrollbars="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtCurrentYear"
+                                    android:gravity="center"
+                                    android:layout_margin="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="PRESENTE AÑO: 2019"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <View
+                                    android:background="@color/colorPrimary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="MES"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="VALOR CUOTA INICIAL"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="VALOR CUOTA FINAL"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="TOTAL PATRIMONIO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="RENTABILIDAD"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth1"
+                                            android:text="ENERO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote1"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote1"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund1"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit1"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth2"
+                                            android:text="FEBRERO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote2"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote2"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund2"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit2"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth3"
+                                            android:text="MARZO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote3"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote3"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund3"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit3"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth4"
+                                            android:text="ABRIL"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote4"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote4"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund4"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit4"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth5"
+                                            android:text="MAYO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote5"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote5"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund5"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit5"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth6"
+                                            android:text="JUNIO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote6"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote6"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund6"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit6"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth7"
+                                            android:text="JULIO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote7"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote7"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund7"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit7"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth8"
+                                            android:text="AGOSTO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote8"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote8"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund8"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit8"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth9"
+                                            android:text="SETIEMBRE"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote9"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote9"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund9"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit9"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth10"
+                                            android:text="OCTUBRE"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote10"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote10"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund10"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit10"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth11"
+                                            android:text="NOVIEMBRE"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote11"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote11"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund11"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit11"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txtMonth12"
+                                            android:text="DICIEMBRE"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote12"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote12"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund12"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit12"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginStart="6dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/txtLastYear"
+                                    android:gravity="center"
+                                    android:layout_margin="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="AÑO PASADO: 2018"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <View
+                                    android:background="@color/colorPrimary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="160dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="MES"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="VALOR CUOTA INICIAL"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="VALOR CUOTA FINAL"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="TOTAL PATRIMONIO"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:text="RENTABILIDAD"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimary"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="140dp"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:text="DICIEMBRE"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/white"
+                                            android:padding="2dp"
+                                            android:background="@color/colorPrimaryDark"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtStartQuote13"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtEndQuote13"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalFund13"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:id="@+id/txtProfit13"
+                                            android:text="-"
+                                            android:gravity="center"
+                                            android:textSize="12sp"
+                                            android:textColor="@android:color/black"
+                                            android:padding="2dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/calendar_icon"
+                        android:text="Fluctuación del Valor Cuota"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/linechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </com.github.mikephil.charting.charts.LineChart>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:text="ACTIVOS DEL FONDO"
+                android:padding="4dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerFound"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnInvest"
+            android:text="INVERTIR"
+            android:background="@drawable/button3_background_rectangle"
+            android:drawableStart="@drawable/invest_icon"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnRescue"
+            android:text="RESCATE"
+            android:background="@drawable/button2_background_rectangle"
+            android:drawableStart="@drawable/invest_icon"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

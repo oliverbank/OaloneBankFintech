@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="18dp"
+        android:src="@drawable/transaction_completed"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Tu Factura Nº 123465798 fue enviada correctamente, Ahora debes esperar a la confirmación de la otra parte."
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBillState"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/white"
+        android:text="VER ESTADO DE FACTURAS"
+        android:background="@drawable/button1_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/white"
+        android:text="IR A INICIO"
+        android:background="@drawable/button3_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

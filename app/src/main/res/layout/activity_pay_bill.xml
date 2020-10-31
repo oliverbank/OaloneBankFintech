@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.PayBillActivity">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Pago de Factura"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="EMPRESA QUE PAGA (MI EMPRESA)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageMyCompany"
+                            android:src="@color/backgroundColor"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Nombre:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtMyName"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="----"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="RUC:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtMyRuc"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="1234567890"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Verificación:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginStart="4dp"
+                                    android:id="@+id/txtMyCompanyVerification"
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="En proceso"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/myimageCompanyVerification"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/transaction_in_progress"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="BENEFICIARIO (EMPRESA A PAGAR)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageCompany"
+                            android:src="@color/backgroundColor"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Nombre:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtName"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="----"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="RUC:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtRuc"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="1234567890"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Verificación:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginStart="4dp"
+                                    android:id="@+id/txtCompanyVerification"
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="En proceso"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <ImageView
+                                    android:id="@+id/imageCompanyVerification"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/transaction_in_progress"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="DATOS DE LA FACTURA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Monto:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtAmmount"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="----"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Fecha de Emisión:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtIssueDate"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="----"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="16sp"
+                                    android:textColor="@android:color/black"
+                                    android:text="Fecha de Vencimiento:"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/txtEndDate"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:text="----"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Mis Cuentas:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:text="Selecciona la cuenta para hacer el pago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rdPenAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta corriente (Soles - PEN): S/ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/rdUsdAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta corriente (Dólares - USD): $ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtCurrencyRate"
+                        android:gravity="end"
+                        android:layout_marginEnd="4dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Tipo de cambio: Compra: 3.30 Venta: 3.40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="4dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="4dp"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/txtTotalInvestment"
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:background="@drawable/button2_background_rectangle"
+                        android:textColor="@android:color/white"
+                        android:gravity="center"
+                        android:text="MONTO A PAGAR: 0.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:layout_margin="8dp"
+                android:id="@+id/btnPayNow"
+                android:text="PAGAR AHORA"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button1_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

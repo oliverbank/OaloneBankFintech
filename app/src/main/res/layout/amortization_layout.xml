@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/edit_text_background1"
+            android:padding="4dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAmmount"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/money2_icon"
+                android:textColor="@android:color/black"
+                android:text="Monto a financiar: 12345678765 PEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAnualInterestRate"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/interest_rate_icon"
+                android:textColor="@android:color/black"
+                android:text="Tasa de interés efectiva anual: 24.54%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtFinanceMonth"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/calendar_icon"
+                android:textColor="@android:color/black"
+                android:text="Duración del financiamiento: 55 Meses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtPaymentFrecuency"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/calendar_icon"
+                android:textColor="@android:color/black"
+                android:text="Frecuencia de pago: Cada 3 meses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_margin="2dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/txtMonthlyInterestRate"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/interest_rate_icon"
+                android:textColor="@android:color/black"
+                android:text="Tasa efectiva mensual: 5.25%"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtQuoteAmmount"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/money2_icon"
+                android:textColor="@android:color/black"
+                android:text="Monto de cada cuota: 1943.25 PEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtTotalDebt"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/money2_icon"
+                android:textColor="@android:color/black"
+                android:text="Deuda total: 324925243 PEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtCostOfDebt"
+                android:layout_margin="2dp"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/money2_icon"
+                android:textColor="@android:color/black"
+                android:text="Costo de deuda: 14552 PEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtSumary"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="Deberás pagar cada 3 meses el monto de 123123 PEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

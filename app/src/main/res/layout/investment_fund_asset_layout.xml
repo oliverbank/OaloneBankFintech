@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_background1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtFundAssetName"
+                    android:drawableStart="@drawable/asset_type_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Nombre del Activo: El dinero es dinero S.A.C B2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetType"
+                    android:drawableStart="@drawable/job_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Tipo Activo: Acción preferente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetLastTransaction"
+                    android:drawableStart="@drawable/calendar_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Última operación: 15-10-2019"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetCurrentPosition"
+                    android:drawableStart="@drawable/dots_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Posición actual: Abierta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetParticipation"
+                    android:drawableStart="@drawable/interest_rate_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:text="Participación en el fondo: 32.45%"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="2dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_background1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:text="COLOCACIÓN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetAmmount"
+                    android:textColor="@android:color/black"
+                    android:text="1'125,367.45 PEN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="2dp"
+                    android:text="RENATBILIDAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtFundAssetProfit"
+                    android:textColor="@android:color/black"
+                    android:text="26.43%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

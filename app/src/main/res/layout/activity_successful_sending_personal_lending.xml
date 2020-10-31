@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".PersonalLendings.SuccessfulSendingPersonalLendingActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="OFERTA DE PRÉSTAMO ENVIADA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAmmount"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="0.00 FX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:src="@drawable/transaction_completed"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btGoToHome"
+            android:layout_margin="10dp"
+            android:text="IR A INICIO"
+            android:background="@drawable/button1_background"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btnMyLendings"
+            android:layout_margin="10dp"
+            android:text="VER MIS PRÉSTAMOS EMITIDOS"
+            android:background="@drawable/button3_background"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

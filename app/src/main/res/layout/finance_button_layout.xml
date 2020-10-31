@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/btnPersonalDigitalCredit"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/credit_card_blue_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Líneas de crédito digitales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:id="@+id/btnRecevierCompanyLendings"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/edit_text_background1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/bank_icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:textColor="@android:color/black"
+                        android:padding="8dp"
+                        android:textSize="16sp"
+                        android:text="Préstamos de Instituciones Financieras y Empresas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnRecevierLendings"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/personal_lending_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Préstamos de terceros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnCashFromCreditCard"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:padding="-12dp"
+                    android:src="@drawable/cash_credit_card"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Efectivo con mi Tarjeta de Crédito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFinanceMyCompany"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/stores_color_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Financiar mi empresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

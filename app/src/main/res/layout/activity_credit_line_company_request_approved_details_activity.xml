@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.CreditLineCompanyRequestApprovedDetailsActivityActivity">
+
+    <ScrollView
+        android:layout_above="@+id/txtReject"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:src="@drawable/credit_card_blue_icon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"/>
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:text="Nombre, Aquí está lo que necesitas saber!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtInterestRate"
+                            android:textSize="16sp"
+                            android:text="- TEA: 79.88%"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineApproved"
+                            android:textSize="16sp"
+                            android:text="- Línea Aprobada: S/1000.00 "
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineCurrency"
+                            android:textSize="16sp"
+                            android:text="- Moneda: Soles (PEN) "
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineStartDate"
+                            android:textSize="16sp"
+                            android:text="- Inicio de Facturación: 1 de cada Mes"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineEndDate"
+                            android:textSize="16sp"
+                            android:text="- Fecha de Corte: Último día de cada Mes"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineStartPaymentDay"
+                            android:textSize="16sp"
+                            android:text="- Día de Pago Inicial: 1 de cada Mes"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtCreditLineEndPaymentDay"
+                            android:textSize="16sp"
+                            android:text="- Último día de Pago: 18 de cada Mes"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtDesgravamenInsurrance"
+                            android:textSize="16sp"
+                            android:text="- Seguro de desgravamen: S/ 4.90"
+                            android:textColor="@android:color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/help_icon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_above="@id/txtReject"
+        android:text="De acuerdo, Continuemos"
+        android:textColor="@android:color/white"
+        android:id="@+id/btnNext"
+        android:layout_margin="10dp"
+        android:background="@drawable/button1_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtReject"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="RECHAZAR"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

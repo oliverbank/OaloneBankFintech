@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".PersonalLendings.DigitalPersonalLoanDetailActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Préstamo Personal Digital"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        app:cardElevation="10dp"
+        android:layout_below="@id/txtTittle"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/personal_loans"
+                    android:layout_margin="8dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="2dp"
+                        android:text="Tu préstamo digital para usarlo en lo que más te convenga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_below="@+id/cardView"
+        android:layout_above="@id/btnPersonalLoanRequest"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="¿CÓMO FUNCIONA?"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/layoutState1"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/imageState1"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/request_black_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutStateText1"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text2State1"
+                                android:layout_margin="2dp"
+                                android:text="Solicita tu préstamo completando la solicitud"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutState2"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageState2"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/bank_blac_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutStateText2"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text2State2"
+                                android:layout_margin="2dp"
+                                android:text="Las instituciones financieras revisarán tus documentos y harán una evaluación crediticia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutState3"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/imageState3"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/taxes_black_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutStateText3"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text2State3"
+                                android:layout_margin="2dp"
+                                android:text="Si tu préstamo fue aprovado recibirás ofertas con las condiciones y detalles"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutState4"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageState4"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/check_box_black"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutStateText4"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text2State4"
+                                android:layout_margin="2dp"
+                                android:text="Acepta la oferta que más te convenga y confirma la operación."
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutState5"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="0dp"
+                            android:layout_margin="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageState5"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/take_money_black"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutStateText5"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:layout_margin="8dp"
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text2State5"
+                                android:layout_margin="2dp"
+                                android:text="Listo, el dinero ya se encuentra en tu cuenta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="8dp"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="DEBES TENER EN CUENTA"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- Las tasas para tu préstamo están expresadas en términos anuales."
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- TCEA máxima: 99.99%"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- TCEA mínima: 0.05%"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- Monto mínimo a solicitar: S/ 5000.00 o $ 1500.00"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- Monto máximo a solicitar: S/ 5000.00 o $ 1500.00"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- Antes de condirmar un préstamo debes verificar los detalles."
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="- Las ofertas de las instituciones financieras suelen tener variaciones a lo solicitado"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="-La tasa y cuotas son fijas durante el período que dure cada préstamo"
+                        android:layout_margin="4dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnPersonalLoanRequest"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:text="SOLICITAR AHORA"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button1_background_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>

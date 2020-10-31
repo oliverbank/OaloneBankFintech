@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".ForexExchange.ForexExchangeActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:src="@drawable/dollar_exachange"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginBottom="15dp"
+            android:text="MERCADO DE DIVISAS"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/edit_text_background1"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/unitedstates_flag_fx"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <LinearLayout
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="COMPRAR DÓLARES (USD)"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="Tengo soles (PEN) y quiero dólares (USD)"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtCurrencySell"
+                            android:layout_marginTop="4dp"
+                            android:text="Tipo de Cambio: S/ 0.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBuyDollars"
+                    android:text="COMPRAR AHORA"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button1_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/edit_text_background1"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/peru_flag_fx"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+
+                    <LinearLayout
+                        android:layout_marginStart="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="COMPRAR SOLES (PEN)"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:text="Tengo dólares (USD) y quiero soles (PEN)"
+                            android:textSize="14sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/txtCurrencyBuy"
+                            android:layout_marginTop="4dp"
+                            android:text="Tipo de Cambio: S/ 0.00"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBuySoles"
+                    android:text="COMPRAR AHORA"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/button1_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

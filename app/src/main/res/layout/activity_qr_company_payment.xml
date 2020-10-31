@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".Companies.QrCompanyPaymentActivity">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/txtMessage"
+        android:id="@+id/qrCode"
+        android:layout_margin="8dp"
+        android:src="@drawable/qr_code_payment_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/edit_text_background1"
+        android:layout_above="@id/cameraPreview"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="ESCANEA EL CÓDIGO PARA PAGAR A UNA EMPRESA, COMERCIO O USUARIO EN OLIVER BANK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_toEndOf="@id/lineStart"
+        android:layout_toStartOf="@id/lineEnd"
+        android:id="@+id/lineTop"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_above="@id/cameraPreview"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <View
+        android:id="@+id/lineStart"
+        android:layout_below="@id/lineTop"
+        android:layout_above="@id/lineBottom"
+        android:layout_toStartOf="@id/cameraPreview"
+        android:background="@android:color/white"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"/>
+
+    <SurfaceView
+        android:layout_margin="10dp"
+        android:id="@+id/cameraPreview"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <View
+        android:id="@+id/lineEnd"
+        android:layout_below="@id/lineTop"
+        android:layout_above="@id/lineBottom"
+        android:layout_toEndOf="@id/cameraPreview"
+        android:background="@android:color/white"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_toEndOf="@id/lineStart"
+        android:layout_toStartOf="@id/lineEnd"
+        android:id="@+id/lineBottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/cameraPreview"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_below="@id/cameraPreview"
+        android:id="@+id/txtResult"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:text="Hola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/button1_background"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/oliver_bank_main_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Oliver Bank"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/qr_code_payment_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

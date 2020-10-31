@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/btnInvestmentFunds"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/presentation_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Fondos mutuos de inversión"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnInvestInCompanies"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/check_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Crowdfunding de empresas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnFactoring"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/receipt_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Factoting de empresas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnSendLending"
+                android:layout_margin="6dp"
+                android:background="@drawable/edit_text_background1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/personal_lending_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/black"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:text="Préstamos a terceros"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

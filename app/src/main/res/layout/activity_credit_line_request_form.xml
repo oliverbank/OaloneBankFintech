@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".CreditLines.CreditLineRequestFormActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Solicitar Línea de Crédito"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:background="@drawable/edit_text_background1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:text="CONDICIÓN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/imgCondition"
+                        android:src="@drawable/student_condition_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCondition"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/black"
+                        android:text="ESTUDIANTE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:background="@drawable/edit_text_background1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCreditScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/credit_score_vector_asset"
+                        android:gravity="center_vertical"
+                        android:text="Línea de Crédito Solicitada en: Soles (S/) - PEN"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="1. Sube una foto o un archivo pdf de tu último recibo de agua o luz pagado"
+                        android:textColor="@android:color/white"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/btnReceiptLightWater"
+                        android:background="@drawable/edit_text_background1"
+                        android:src="@drawable/camera_icon"
+                        android:padding="1dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="25dp"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/studentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="2. Completa los siguientes datos"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/btnSchool"
+                            android:drawableStart="@drawable/school_vector_icon"
+                            android:layout_margin="8dp"
+                            android:padding="4dp"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Universidad o Instituto..."
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                        <Button
+                            android:id="@+id/btnSemesterNumber"
+                            android:drawableStart="@drawable/one_icon"
+                            android:layout_margin="8dp"
+                            android:padding="4dp"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Ciclo académico en curso..."
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+                        <Button
+                            android:id="@+id/btnDegree"
+                            android:drawableStart="@drawable/job_icon"
+                            android:layout_margin="8dp"
+                            android:padding="4dp"
+                            android:gravity="start|center_vertical"
+                            android:hint=" Carrera..."
+                            android:background="@drawable/edit_text_background1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="3. Sube una foto de tu constancia de matrícula"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnSchoolRegister"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="25dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="4. Sube una foto de tu boleta de pago cancelada más reciente"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnSchoolReceipt"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="25dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dependentWorkerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="2. Sube una foto de tus 3 últimas boletas de pago"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_margin="4dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/btnPaymentReceipt1"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnPaymentReceipt2"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnPaymentReceipt3"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/independentWorkerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="2. Sube una foto de tus 2 últimas declaraciones anuales de Impuesto a la Renta de cuarta categoría."
+                        android:textColor="@android:color/white"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnRentTax1"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnRentTax2"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="3. Sube una foto de tus 3 últimas Recibos por Honorarios"
+                        android:textColor="@android:color/white"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnHonorPaymentReceipt1"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnHonorPaymentReceipt2"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnHonorPaymentReceipt3"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="4. Sube una foto de tus 3 últimas pagos a la SUNAT"
+                        android:textColor="@android:color/white"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/btnSunatPaymentReceipt1"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnSunatPaymentReceipt2"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnSunatPaymentReceipt3"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lessorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="2. Sube una foto de tus 2 últimas declaraciones juradas de Impuesto a La Renta."
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <LinearLayout
+                            android:layout_margin="8dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/btnRentDeclaration1"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnRentDeclaration2"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="3. Sube una foto de tu último contrato de alquiler"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnLeasingContract"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="4. Sube una foto de tu autovalúo o propiedad arrendada"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnProperty"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="10dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="5. Sube una foto de tus 2 últimas pagos a la Sunat."
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <LinearLayout
+                            android:layout_margin="8dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/btnSunatPayment1"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnSunatPayment2"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stockHolderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="2. Sube una foto de tu última declaración jurada de la empresa o ficha registral."
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnDeclarationOfCompany"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="25dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="3. Sube una foto del estado de cuenta corriente de la empresa"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btnCurrentStateAccount"
+                            android:background="@drawable/edit_text_background1"
+                            android:src="@drawable/camera_icon"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="25dp"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="4. Sube una foto de tus 3 últimas pagos de IGV"
+                            android:textColor="@android:color/white"
+                            android:padding="8dp"
+                            android:background="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                        <LinearLayout
+                            android:layout_margin="8dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageButton
+                                android:id="@+id/btnIgvPayment1"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnIgvPayment2"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnIgvPayment3"
+                                android:background="@drawable/edit_text_background1"
+                                android:src="@drawable/camera_icon"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="10dp"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRequestCreditLine"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button1_background"
+                android:text="ENVIAR SOLICITUD"
+                android:layout_margin="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

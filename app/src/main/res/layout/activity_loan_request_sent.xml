@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="8dp"
+    android:background="@drawable/gradient_animation"
+    tools:context=".MyLoans.LoanRequestSentActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/checkImg"
+        android:src="@drawable/check_mark"
+        android:layout_width="160dp"
+        android:layout_height="160dp"/>
+
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_margin="8dp"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_below="@id/checkImg"
+        android:text="Tu solicitud fue enviada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtMessage2"
+        android:layout_margin="8dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_below="@id/txtMessage"
+        android:text="Tu solicitud está siendo procesada y serás notificado en cuanto todo esté listo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnMyLoansActivity"
+        android:text="Regresar a Mis Préstamos"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button3_background"
+        android:layout_margin="16dp"
+        android:layout_below="@id/txtMessage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

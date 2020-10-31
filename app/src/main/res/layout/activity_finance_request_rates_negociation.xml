@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/background_wall"
+    tools:context=".Companies.FinanceRequestRatesNegociationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Negociación de tasa de retorno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtCompanyName"
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Nombre de la emppresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/companyImage"
+                        android:src="@color/colorPrimary"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtInvestment"
+                            android:layout_margin="2dp"
+                            android:gravity="center_vertical"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Inversión: 1200 PEN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtPaymentFrecuency"
+                            android:layout_margin="2dp"
+                            android:gravity="center_vertical"
+                            android:drawableStart="@drawable/calendar_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Frecuencia de pagos: Cada 3 meses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtInterestRate"
+                            android:layout_margin="2dp"
+                            android:gravity="center_vertical"
+                            android:drawableStart="@drawable/interest_rate_icon"
+                            android:textColor="@android:color/black"
+                            android:text="Tasa de retorno inicial: 15.34% Anual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/comment_list"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/gradient_animation"
+        android:padding="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtInterestRate"
+            android:drawableStart="@drawable/interest_rate_icon"
+            android:inputType="numberDecimal|number"
+            android:padding="5dp"
+            android:background="@drawable/edit_text_background1"
+            android:hint="Tasa efectiva anual (%)..."
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/btnSendInterestRate"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/edit_text_background1"
+            android:padding="5dp"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="33dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".CreditCardTransactions.CreditCardCashRequestErrorActivity">
+
+    <ScrollView
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="¡ERROR EN TRANSACCIÓN!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:src="@drawable/error_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="TARJETA INVÁLIDA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btGoToHome"
+                android:layout_margin="10dp"
+                android:text="IR A INICIO"
+                android:background="@drawable/button1_background"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/btnMyOperations"
+                android:layout_margin="10dp"
+                android:text="IR A MIS OPERACIONES"
+                android:background="@drawable/button3_background"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:background="@drawable/button1_background"
+        android:layout_alignParentBottom="true"
+        android:padding="0dp"
+        android:layout_margin="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/oliver_bank_main_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Oliver Bank"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:src="@drawable/error_icon"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

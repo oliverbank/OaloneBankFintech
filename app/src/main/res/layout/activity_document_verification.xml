@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".DocumentVerificationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Verificación del DNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/gradient_animation">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:background="@android:color/white"
+                android:padding="6dp"
+                android:text="*Deber subir fotos de tu documento nacional de identidad para validar tu identidad, en cuanto hayamos realizado la verificación de manera exitosa, serás un usuario verificado."
+                android:textColor="@color/redColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="1. Foto de parte delantera del DNI"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/help_icon"
+                android:background="@drawable/edit_text_background1"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/dniImage1"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_background1"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_icon"
+                android:layout_width="180dp"
+                android:layout_height="180dp" />
+
+            <TextView
+                android:text="2. Foto de parte trasera del DNI"
+                android:textColor="@android:color/black"
+                android:layout_margin="8dp"
+                android:textSize="16sp"
+                android:background="@drawable/edit_text_background1"
+                android:padding="2dp"
+                android:drawableEnd="@drawable/help_icon"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/dniImage2"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_background1"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera_icon"
+                android:layout_width="180dp"
+                android:layout_height="180dp" />
+
+            <Button
+                android:id="@+id/btnSent"
+                android:text="Enviar"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button3_background"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

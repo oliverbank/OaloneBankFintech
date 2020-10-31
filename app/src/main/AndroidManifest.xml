@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="oliver.oalone.oalonedevelopers.oalonebank_fintech">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <meta-data
+        android:name="com.google.android.gma.vision.DEPENDENCIES"
+        android:value="face" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/oliver_bank_main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/oliver_bank_main_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Deposits.CurrentDepositActivity"></activity>
+        <activity android:name=".RegistrationData.RegistrationDataActivity" />
+        <activity android:name=".Deposits.RegisterDepositActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequest.ShareholderRequest.ShareholderRequestActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequest.RentierRequest.RentierExpressLoanRequestActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequest.IndependentWorker.IndependentWorkerExpressLoanRequestActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequest.DependentWorker.DependentWorkerExpressLoanRequestActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.LaonPayment.PayLoanBillActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.LaonPayment.LoanPaymentListActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanReady.SuccessfulLoanActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanReady.ExpressLoanReadySumaryActivity" />
+        <activity android:name=".MyLoans.LoanRequestSentActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequest.StudentRequest.ExpressLoanRequestActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanRequestFormActivity" />
+        <activity android:name=".MyLoans.ExpressLoan.ExpressLoanActivity" />
+        <activity android:name=".MyLoans.MyLoansActivity" />
+        <activity android:name=".MyLendings.MyLendingsActivity" />
+        <activity android:name=".SmsVerificationActivity" />
+        <activity android:name=".PhoneAuthVeryficationActivity" />
+        <activity android:name=".PhoneAuthActivity" />
+        <activity android:name=".AccountConfigurationActivity" />
+        <activity android:name=".PersonalLendings.DigitalPersonalLoanRequestFormActivity" />
+        <activity android:name=".PersonalLendings.DigitalPersonalLoanRequestValuesActivity" />
+        <activity android:name=".PersonalLendings.DigitalPersonalLoanDetailActivity" />
+        <activity android:name=".PersonalLendings.RequestPersonalLendingTypeActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanyPersonalLendingBillsToChargeActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanyPersonalLendingBillsActivity" />
+        <activity android:name=".Companies.PersonalLendings.MyCompanyReceiverPersonalLendingActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanySuccessfulSendingPersonalLendingActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanyPersonalLendingSumaryActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanySendLendingNotificationActivity" />
+        <activity android:name=".Companies.PersonalLendings.CompanySearchUserForLendingActivity" />
+        <activity android:name=".Companies.PersonalLendings.MyCompanySendedPersonalLendingsActivity" />
+        <activity android:name=".WithdrawalWithoutCardInProgressActivity" />
+        <activity android:name=".WithdrawalWithoutCardActivity" />
+        <activity android:name=".Companies.CompanyLineOfCreditUsd.CompanyLineOfCreditScheduleUsdActivity" />
+        <activity android:name=".Companies.CompanyLineOfCreditUsd.CompanyLineOfCreditTotalPaymentUsdActivity" />
+        <activity android:name=".Companies.CompanyLineOfCreditUsd.CompanyLineOfCreditPayUsdActivity" />
+        <activity android:name=".Companies.CompanyLineOfCreditUsd.CompanyLineOfCreditUseUsdActivity" />
+        <activity android:name=".Companies.CompanyLineOfCreditUsd.CompanyLineOfCreditDetailUsdActivity" />
+        <activity android:name=".Companies.CompanyLineOfCredit.CompanyLineOfCreditScheduleActivity" />
+        <activity android:name=".Companies.CompanyLineOfCredit.CompanyLineOfCreditTotalPaymentActivity" />
+        <activity android:name=".Companies.CompanyLineOfCredit.CompanyLineOfCreditPayActivity" />
+        <activity android:name=".Companies.CompanyLineOfCredit.CompanyLineOfCreditUseActivity" />
+        <activity android:name=".Companies.CompanyLineOfCredit.CompanyLineOfCreditDetailActivity" />
+        <activity android:name=".LineOfCreditUsd.LineOfCreditScheduleUsdActivity" />
+        <activity android:name=".LineOfCreditUsd.LineOfCreditTotalPaymentUsdActivity" />
+        <activity android:name=".LineOfCreditUsd.LineOfCreditPayUsdActivity" />
+        <activity android:name=".LineOfCreditUsd.LineOfCreditUseUsdActivity" />
+        <activity android:name=".LineOfCreditUsd.LineOfCreditDetailUsdActivity" />
+        <activity android:name=".LineOfCredit.LineOfCreditScheduleActivity" />
+        <activity android:name=".LineOfCredit.LineOfCreditTotalPaymentActivity" />
+        <activity android:name=".LineOfCredit.LineOfCreditPayActivity" />
+        <activity android:name=".LineOfCredit.LineOfCreditUseActivity" />
+        <activity android:name=".LineOfCredit.LineOfCreditDetailActivity" />
+        <activity android:name=".LineOfCredits.LineOfCreditPenUseActivity" />
+        <activity android:name=".CreditCardTransactions.CreditCardCashRequestErrorActivity" />
+        <activity android:name=".CreditCardTransactions.CreditCardCashRequestSuccessfullActivity" />
+        <activity android:name=".CreditCardTransactions.CreditCardCashRequestActivity" />
+        <activity android:name=".CreditCardTransactions.RegisterCreditCardActivity" />
+        <activity android:name=".CreditCardTransactions.DisplayCreditCardsActivity" />
+        <activity android:name=".Companies.MyCompanyUploadDepositBillActivity" />
+        <activity android:name=".WebViewctivity" />
+        <activity android:name=".PersonalLendings.PersonalLendingBillsToChargeActivity" />
+        <activity android:name=".PersonalLendings.PersonalLendingBillsActivity" />
+        <activity android:name=".PersonalLendings.MyReceiverPersonalLendingsActivity" />
+        <activity android:name=".PersonalLendings.MySendedPersonalLendingsActivity" />
+        <activity android:name=".PersonalLendings.SuccessfulSendingPersonalLendingActivity" />
+        <activity android:name=".PersonalLendings.PersonalLendingSumaryActivity" />
+        <activity android:name=".PersonalLendings.SendLendingNotificationActivity" />
+        <activity android:name=".PersonalLendings.SearchUserForLendingActivity" />
+        <activity android:name=".SucessfullTransferActivity" />
+        <activity android:name=".Companies.FinanceRequestInvestmentStateActivity" />
+        <activity android:name=".ForexExchange.FxOperationSuccessfullActivity" />
+        <activity android:name=".ForexExchange.ForexExchangeAmmountActivity" />
+        <activity android:name=".ForexExchange.ForexExchangeActivity" />
+        <activity android:name=".Companies.CompanyCreditLineRequestFormActivity" />
+        <activity android:name=".CreditLines.CreditLineUseCompletedActivity" />
+        <activity android:name=".Companies.MyCompanyWithdrawalTransactionInProgressActivity" />
+        <activity android:name=".WithdrawalTransactionInProgressActivity" />
+        <activity android:name=".Companies.MyCompanyRegisterWithdrawalActivity" />
+        <activity android:name=".Companies.MyCompanyWithdrawalActivity" />
+        <activity android:name=".Companies.MyCompanyFinishCheckoutActivity" />
+        <activity android:name=".Companies.MyCompanyCompaniesCheckoutActivity" />
+        <activity android:name=".Companies.MyCompanyFinishTransferActivity" />
+        <activity android:name=".Companies.MyCompanyRegisterTransferActivity" />
+        <activity android:name=".Companies.MyCompanyTransferActivity" />
+        <activity android:name=".Companies.MyCompanyDepositTransactionInProgressActivity" />
+        <activity android:name=".Companies.RegisterMyCompanyDepositActivity" />
+        <activity android:name=".Companies.MyCompanyDepositActivity" />
+        <activity android:name=".Companies.MyCompanyOperationsActivity" />
+        <activity android:name=".RegisterInfo.RegisterInfo5Activity" />
+        <activity android:name=".RegisterInfo.RegisterInfo4Activity" />
+        <activity android:name=".RegisterInfo.RegisterInfo3Activity" />
+        <activity android:name=".RegisterInfo.RegisterInfo2Activity" />
+        <activity android:name=".RegisterInfo.RegisterInfo1Activity" />
+        <activity android:name=".Companies.AddPersonalBusinessActivity" />
+        <activity android:name=".Companies.PayBillActivity" />
+        <activity android:name=".Investors.RegisterInvestmentOnFactoringRequestActivity" />
+        <activity android:name=".Companies.FactoringDiscountRateActivity" />
+        <activity android:name=".Companies.CompanyToPayManagerActivity" />
+        <activity android:name=".Companies.RegisterInvestmentOnFinanceRequestActivity" />
+        <activity android:name=".Companies.CreditLineCompanyUseUsdActivity" />
+        <activity android:name=".Companies.CreditLineCompanyUsdSchduleActivity" />
+        <activity android:name=".Companies.CreditLineCompanyUsdPayActivity" />
+        <activity android:name=".Companies.CreditLineCompanyUsePenActivity" />
+        <activity android:name=".Companies.CreditLineCompanyPenScheduleActivity" />
+        <activity android:name=".Companies.CreditLineCompanyPayActivity" />
+        <activity android:name=".Companies.CreditLineCompanyContractActivity" />
+        <activity android:name=".Companies.CreditLineCompanyRequestApprovedDetailsActivityActivity" />
+        <activity android:name=".Companies.CreditLineCompanyRequestApprovedActivity" />
+        <activity android:name=".QrCodeDoesNotExistActivity" />
+        <activity android:name=".Companies.MyCompanyAccountActivity" />
+        <activity android:name=".MyQrCodeActivity" />
+        <activity android:name=".Companies.SucessfullPaymentActivity" />
+        <activity android:name=".Companies.FinishCheckoutActivity" />
+        <activity android:name=".Companies.CompaniesCheckoutActivity" />
+        <activity android:name=".Companies.QrCompanyPaymentActivity" />
+        <activity android:name=".Companies.QrCompanyCodeActivity" />
+        <activity android:name=".Companies.AddInformalCompanyActivity" />
+        <activity android:name=".Companies.BillSumaryActivity" />
+        <activity android:name=".Companies.CreateBillActivity" />
+        <activity android:name=".Companies.SelectCompanyForBiillingActivity" />
+        <activity android:name=".Companies.CompanyPaymentManagerActivity" />
+        <activity android:name=".CreditLineContractActivity" />
+        <activity android:name=".CreditLineRequestApprovedDetailsActivity" />
+        <activity android:name=".CreditLineRequestApprovedActivity" />
+        <activity android:name=".CreditLines.CreditLineRequestFormActivity" />
+        <activity android:name=".PinActivity" />
+        <activity android:name=".ProfileImageSetUpActivity" />
+        <activity android:name=".CreditLines.CreditLineUsdPayActivity" />
+        <activity android:name=".CreditLines.CreditLineUsdScheduleActivity" />
+        <activity android:name=".CreditLines.CreditLineUseUsdActivity" />
+        <activity android:name=".CreditLines.CreditLinePenPayActivity" />
+        <activity android:name=".CreditLines.CreditLinePenScheduleActivity" />
+        <activity android:name=".CreditLines.CreditLineUsePenActivity" />
+        <activity android:name=".InvestmentFunds.InvestmentFundRescueActivity" />
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterInfoActivity" />
+        <activity android:name=".Companies.MyCompaniesActivity" />
+        <activity android:name=".Companies.AddCompanyActivity" />
+        <activity android:name=".Companies.FinanceMyCompanyActivity" />
+        <activity android:name=".Companies.FinancingMyCompanySumaryActivity" />
+        <activity android:name=".MyAccountActivity" />
+        <activity android:name=".Companies.FinanceRequestDetailActivity" />
+        <activity android:name=".DocumentVerificationActivity" />
+        <activity android:name=".InvestmentFunds.InvestmentFundDetailActivity" />
+        <activity android:name=".InvestmentFunds.RegisterInvestmentInFundActivity" />
+        <activity android:name=".InvestmentFunds.InvesmentFundTransactionCompletedActivity" />
+        <activity android:name=".MyOperationsActivity" />
+        <activity android:name=".DepositActivity" />
+        <activity android:name=".RegisterDepositActivity" />
+        <activity android:name=".DepositTransactionInProgressActivity" />
+        <activity android:name=".UploadDepositBillActivity" />
+        <activity android:name=".Companies.FactorringMyCompanyActivity" />
+        <activity android:name=".Companies.FactoringMyCompanySumaryActivity" />
+        <activity android:name=".Investors.FactoringRequestDetailActivity" />
+        <activity android:name=".Companies.FinanceRequestRatesNegociationActivity" />
+        <activity android:name=".Investors.FactoringRequestRatesNegociationsActivity" />
+        <activity android:name=".TransferActivity" />
+        <activity android:name=".RegisterTransferActivity" />
+        <activity android:name=".FinishTransferActivity" />
+        <activity android:name=".WithdrawalActivity" />
+        <activity android:name=".RegisterWithdrawalActivity" />
+        <activity android:name=".DirectInvestmentStateActivity" />
+        <activity android:name=".InvestmentFunds.InvestmentFundsActivity" />
+        <activity android:name=".Companies.CompaniesForFinanceRequestActivity" />
+        <activity android:name=".Investors.CompaniesForFactoringRequestActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="oliver.oalone.oalonedevelopers.oalonebank_fintech.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

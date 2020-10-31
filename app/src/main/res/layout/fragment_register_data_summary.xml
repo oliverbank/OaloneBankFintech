@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegistrationData.RegisterDataSummaryFragment">
+
+    <RelativeLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_above="@id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Finalizar Registro"
+                            android:textSize="18sp"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:text="A continuación se muestra un resumen de tu registro, en caso exista una observación la podrás visualizar aquí."
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/num_one_color_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Foto de Perfil"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgOne"
+                                android:src="@drawable/transaction_in_progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtProfileImage"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="A la espera de tu foto de perfil"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/num_two_color_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Datos Pesonales"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgTwo"
+                                android:src="@drawable/transaction_in_progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtPersonalData"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="A la espera de tus datos personales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/num_three_color_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Datos de Contacto"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgThree"
+                                android:src="@drawable/transaction_in_progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtContactData"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="A la espera de tus datos de contacto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/num_four_color_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Datos Adicionales"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgFour"
+                                android:src="@drawable/transaction_in_progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtAditionalData"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="A la espera de tus datos adicionales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/num_five_color_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Datos de Acceso"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgFive"
+                                android:src="@drawable/transaction_in_progress"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtAccessData"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="A la espera de tus datos de acceso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/credit_card_user_verification_icon"
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                            <TextView
+                                android:layout_margin="8dp"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:text="Documento de Identidad"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/imgDocs"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtDocs"
+                            android:layout_marginStart="20dp"
+                            android:textSize="14sp"
+                            android:text="Paso omitido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cbTermsAndConditions"
+                        android:textColor="@android:color/white"
+                        android:text="Acepto las"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtTermsAndConditions"
+                        android:layout_margin="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Políticas, Términos y Condiciones."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_alignParentBottom="true"
+            android:text="REGISTRARSE AHORA"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button1_background_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

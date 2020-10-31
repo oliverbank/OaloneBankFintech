@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyLoans.ExpressLoan.ExpressLoanReady.LoanReadyConditionsFragment">
+
+    <ScrollView
+        android:layout_above="@id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/checklist_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"/>
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:text="CONDICIONES DEL PRÉSTAMO:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/money_hand_up_icon"
+                        android:layout_margin="12dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:text="MONTO APROBADO"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtAmount"
+                        android:layout_margin="8dp"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/black"
+                        android:text="S/ 0.00"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/calendar_color_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtMonths"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Cuotas: 48 Cuotas Mensuales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/calendar_color_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtGracePeriod"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Período de gracia: 2 Meses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/simulation_1"
+                        android:layout_margin="12dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:text="CUOTA MENSUAL"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtQuote"
+                        android:layout_margin="8dp"
+                        android:textSize="24sp"
+                        android:textColor="@android:color/black"
+                        android:text="S/ 0.00"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/interest_rate_color_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtInterestRate"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="TCEA: 800.00%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/insurrance_color_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtDesgravamenInsurrance"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Seguro de desgravamen: S/ 1.99"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/alarm_money"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtDailyDefaulterRate"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Tasa moratoria diaria: 0.00%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/transfer_user_icon"
+                        android:layout_margin="12dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:text="DESEMBOLSO Y FECHAS DE PAGO"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/money_hand_up_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtCurrentAmount"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Monto a Recibir hoy: S/0.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_margin="8dp"
+                        android:padding="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/calendar_color_icon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <TextView
+                            android:id="@+id/txtPaymentDate"
+                            android:layout_margin="8dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="Paga tu Cuota el día 00 de cada mes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnShowPaymentDates"
+                        android:layout_margin="8dp"
+                        android:text="Ver Cronograma de Pagos"
+                        android:background="@drawable/button2_background"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/information_color_icon"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"/>
+
+                        <TextView
+                            android:id="@+id/txtExpirationDate"
+                            android:layout_margin="4dp"
+                            android:textColor="@android:color/black"
+                            android:text="Esta oferta de préstamo está disponible hasta el día: dd/mm/yyyy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:text="Continuar"
+        android:background="@drawable/button1_background"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

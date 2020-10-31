@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="8dp"
+                    android:src="@drawable/calendar_color_icon"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"/>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtMonthAndYear"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="DICIEMBRE 2020"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtQuoteAmount"
+                        android:layout_margin="8dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="CUOTA: S/ 165,164.55"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgTransactionState"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/transaction_in_progress"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtExpirationDaysCount"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="8dp"
+                    android:textSize="12sp"
+                    android:text="Vence en: 18 Días"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPay"
+                    android:text="PAGAR"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button1_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtExpirationDate"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:textSize="12sp"
+                android:text="Vencimiento: dd/mm/yyyy"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

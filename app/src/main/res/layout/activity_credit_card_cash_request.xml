@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/gradient_animation"
+    tools:context=".CreditCardTransactions.CreditCardCashRequestActivity">
+
+    <TextView
+        android:id="@+id/txtTittle"
+        android:background="@drawable/gradient_animation"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center_vertical"
+        android:text="Convertir mi Saldo a Efectivo"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/txtTittle"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/credit_card_vector_asset"
+                        android:gravity="center_vertical"
+                        android:text="Mi Tarjeta:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtCardNumber"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="Número de tarjeta: xxxxxxxxxxxxxx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtCardExpirationDate"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="8dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:text="Vence: xx/xx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="8dp"
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/accountsLayout"
+                    android:background="@drawable/edit_text_background1"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/money2_icon"
+                        android:gravity="center_vertical"
+                        android:text="Mis Cuentas:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:text="Selecciona tu cuenta de destino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rdPenAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta básica (Soles - PEN): S/ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:id="@+id/rdUsdAccount"
+                            android:layout_margin="4dp"
+                            android:padding="4dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:text="Cuenta básica (Dólares - USD): $ 0.00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/txtCurrencyRate"
+                        android:gravity="end"
+                        android:textSize="10sp"
+                        android:layout_marginEnd="4dp"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Tipo de cambio: Dispuesto por la institución financiera emisora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/theLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="8dp"
+                    android:elevation="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/edit_text_background1"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtQuantityMessage"
+                            android:layout_marginTop="6dp"
+                            android:textSize="16sp"
+                            android:textColor="@android:color/black"
+                            android:text="¿Cuantos UM necesitas?"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:id="@+id/edtAmount"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:inputType="numberDecimal|number"
+                            android:drawableStart="@drawable/money2_icon"
+                            android:padding="2dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:hint="Monto en UM..."
+                            android:layout_marginStart="60dp"
+                            android:layout_marginEnd="60dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/myProfileImage"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@color/colorPrimary"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp" />
+
+                    <android.support.v7.widget.CardView
+                        app:cardElevation="10dp"
+                        android:layout_margin="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="Lo que tendrás en efectivo:"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtCashAmount"
+                                android:text="0.00"
+                                android:textSize="22sp"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        app:cardElevation="10dp"
+                        android:layout_margin="8dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="8dp"
+                            android:background="@drawable/edit_text_background1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtUsernameRecieve"
+                                android:text="Lo que gastarás en tu tarjeta:"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/txtCreditCardAmount"
+                                android:text="0.00"
+                                android:textSize="22sp"
+                                android:textColor="@color/colorPrimary"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/receiverFlag"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/credit_card_blue_icon"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnFinish"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/button3_background"
+                    android:text="REALIZAR OPERACIÓN"
+                    android:textColor="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
